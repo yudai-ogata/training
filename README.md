@@ -1,2 +1,2 @@
 # training
-ZiQ用研修レポジトリ
+ZiQ研修用
