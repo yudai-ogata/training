@@ -1,0 +1,122 @@
+<@ charset="utf-8"> body {
+    font-family: "Avenir Next";
+}
+
+body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.mainscreen {
+    width: 100%;
+}
+
+.logo {
+    position: relative;
+}
+
+.hlogo {
+    width: 100%;
+}
+
+.absolute {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 800px;
+    height: 800px;
+    background: (255, 255, 255, 0.5);
+    border-radius: 50%;
+    transform: translateY(10px);
+}
+
+.menu {
+    display: table;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+nav ul {
+    list-style: none;
+    justify-content: center;
+}
+
+li {
+    display: table-cell;
+    border: 1px dashed;
+    border-bottom: none;
+    border-top: none;
+    
+}
+
+.news {
+    background-color: cornsilk;
+}
+
+.button {
+    /* 文字サイズを1.4emに指定 */
+    font-size: 1.4em;
+    /* 文字の太さをboldに指定 */
+    font-weight: bold;
+    /* 縦方向に10px、横方向に30pxの余白を指定 */
+    padding: 10px 30px;
+    /* 背景色を濃い青色に指定 */
+    background-color: #248;
+    /* 文字色を白色に指定 */
+    color: #ffffff;
+    /* ボーダーをなくす */
+    border-style: none;
+    /* 変化の時間  */
+    transition: 0.5s;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.button:hover {
+    /* 背景色を明るい青色に指定 */
+    background-color: #24d;
+    /* 文字色を白色に指定 */
+    color: #fff;
+    /* 角丸の指定 */
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.special {
+    background-image: url("images/special_bg.jpg");
+    width: 100%;
+}
+
+.pickup {
+    background-image: url("images/menu_bg.jpg");
+    width: 100%;
+}
+
+.footer {
+    background-image: url("images/footer_bg.jpg");
+    width: 100%;
+}
+
+.fimg {
+    position: absolute;
+    width: 100%;
+}
+
+.flogo {
+    position: absolute;
+}
+
+p {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.logo11 {
+    display: block;
+    margin: 0 auto;
+}
