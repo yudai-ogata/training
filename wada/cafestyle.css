@@ -244,6 +244,10 @@ li {
   width: 380px;
 }
 
+.specialItem {
+  
+}
+
 .specialContentTitle {
   margin: 0 0 0 10px;
   padding: 3px 0 3px 10px;
@@ -374,7 +378,6 @@ li {
   align-items: center;
   font-size: 2.2rem;
   font-weight: bold;
-  
 }
 
 .menuPickupLink :hover {
@@ -462,9 +465,17 @@ li {
   width: 100%;
 }
 
-.faAi {
+.fa {
   font-size: 6rem;
   color: #23648D;
+  margin: 10px;
+  background-color: #fff;
+  line-height: 0.7;
+  border-radius: 10px;
+  text-shadow: 1px 1px #fff,
+              -1px -1px #fff,
+              -1px 1px #fff,
+               1px -1px #fff;
 }
 
 .footerConAd {
@@ -512,6 +523,8 @@ li {
 .footerOblique {
   font-style: oblique;
 }
+
+
 
 @media (max-width:420px) {
 }
