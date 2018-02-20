@@ -2,18 +2,28 @@
 
 @-ms-viewport {width: device-width;}
 
-html{
+html {
   font-size: 62.5%; /* 10px */
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
   font-family: 'メイリオ',
   'Hiragino Kaku Gothic Pro', sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  overflow-x: hidden;
 }
 
-*{
+*, *::before, *::after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+* {
   margin: 0;
 }
 
@@ -24,6 +34,26 @@ a {
 
 li {
   list-style: none;
+}
+
+/* -----------------
+ * parts
+   ----------------- */
+
+.heading {
+  display: block;
+  color: #d57328;
+  font-size: 4rem;
+  text-align: center;
+  line-height: 1;
+  padding: 30px 20px 20px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.heading_sub {
+  font-size: 1.8rem;
 }
 
 /* -----------------
@@ -73,12 +103,12 @@ li {
  * header menu
    ----------------- */
 
-.header .menu {
+.menu {
   margin: 0;
   padding: 0;
 }
 
-.header .menu ul {
+.navList {
   display: table;
   table-layout: fixed;
   width: 86.5rem;
@@ -89,26 +119,37 @@ li {
   text-align: center;
 }
 
-.menu li {
+.menuItem {
   display: table-cell;
   text-align: center;
   border-left: dashed 1px #aaa;
+  font-weight: bold;
+}
+
+.menuItem :hover {
+  color: #da7943;
 }
 
 .menu :nth-child(6) {
   border-right: dashed 0.1rem #aaa;
 }
 
-.header .menu li a {
+.menuLink {
   margin: 0;
   padding: 0;
   color: #5E1939;
   text-decoration: none;
+  transition: 0.2s;
 }
 
-.header .menu li span {
+
+.menuItemSub {
   display: block;
   font-size: 1.4rem;
+}
+
+.menuLinkActive {
+  color: #da7943;
 }
 
 @media (max-width:420px) {
@@ -127,21 +168,10 @@ li {
   align-items: center;
 }
 
-.news h2 {
-  margin: 0 8px 0 0;
-  padding: 2rem;
-  background: #F8F8F8;
-  color: #D57328;
-  font-size: 3.8rem;
-  border: solid 2px #FCFCFC;
-  border-radius: 50%;
-  text-align: center;
+.newsHeading {
+  margin-bottom: 10px;
 }
 
-.news h2 span {
-  display: block;
-  font-size: 1.8rem;
-}
 
 .newsList {
   border: solid 2px #aaa;
@@ -157,8 +187,33 @@ li {
   border-bottom: none;
 }
 
-.newsList :hover {
-  background-color: #eacf3e;
+.newsItem_cat {
+   font-size: 1.1rem;
+   background: #d57328;
+   padding: 2px 4px;
+   border-radius: 4px;
+   color: #fff;
+ }
+
+.newsItem_cat_menu {
+  background-color: #A70707;
+}
+
+.newsItem_time {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 10px;
+}
+
+.newsItemLink {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+  transition: 0.2s;
+}
+
+.newsItemLink:hover {
+  background: #fce993;
   border-radius: 4px;
 }
 
@@ -166,29 +221,6 @@ li {
   padding: 5px;
   border-bottom: dashed 1px #aaa;
   font-size: 1.4rem;
-}
-
-.newsItem a {
-  text-decoration: none;
-  padding: 5px;
-  color: #000;
-}
-
-.newsItem_cat {
-  margin: 0 5px 0 0;
-  padding: 2px 2px;
-  border-radius: 4px;
-  background-color: #D57328;
-  color: #FDFDFD;
-  font-size: 1.2rem;
-}
-
-.newsItem_time {
-  font-size: 1.1rem;
-}
-
-.newsItem_cat_menu {
-  background-color: #A70707;
 }
 
 @media (max-width:420px) {
@@ -199,15 +231,12 @@ li {
    ----------------- */
 
 .special {
-  padding: 50px;
-  background-image: url(img/special_bg.jpg);
+  padding: 60px 10px;
+  background: url(img/special_bg.jpg) 50%;
   background-size: cover;
-  background-position: 50% 50%;
-  height: 780px;
-  
 }
 
-.special h2 {
+.spHeading {
   margin: 0px auto 5px auto;
   padding: 15px 0px;
   width: 7em;
@@ -219,7 +248,7 @@ li {
   text-align: center;
 }
 
-.special h2 span {
+.spHeading_sb {
   font-size: 1.8rem;
   display: block;
 }
@@ -232,10 +261,19 @@ li {
 }
 
 .specialItem {
+  position: relative;
   margin: 20px;
   background-color: rgba(255,255,255,0.9);
   font-size: 1.4rem;
-  box-shadow: 5px 5px 5px #505050;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+
+.specialItem:hover {
+  box-shadow: 5px 5px 5px rgba(255,255,255,0.2),
+              -5px 5px 5px rgba(255,255,255,0.2),
+              5px -5px 5px rgba(255,255,255,0.2),
+              -5px -5px 5px rgba(255,255,255,0.2);
 }
 
 .specilItem_img {
@@ -244,8 +282,19 @@ li {
   width: 380px;
 }
 
-.specialItem {
-  
+.specialNumber {
+  position: absolute;
+  left: 45%;
+  top: 250px;
+  width: 2em;
+  height: 2em;
+  line-height: 2;
+  color: #fff;
+  background-color: #9D265D;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
 }
 
 .specialContentTitle {
@@ -264,20 +313,24 @@ li {
 }
 
 .specialLink {
-  margin: 25px auto 20px auto;
-  width: 7.5em;
-  height: 3em;
+  margin: 20px auto;
+  width: 170px;
+  padding: 15px 20px;
+  border: 1px solid #9d265d;
   background-color: #9D265D;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  text-align: center;
   font-size: 2.2rem;
   font-weight: bold;
-}
-
-.specialLink a {
   text-decoration: none;
   color: #fff;
+  transition: 0.3s;
+}
+
+.specialLink:hover {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: #d57328;
 }
 
 @media (max-width:420px) {
@@ -288,10 +341,9 @@ li {
    ----------------- */
 
 .menu_pickup {
-  padding: 50px;
-  background-image: url(img/menu_bg.jpg);
+  padding: 60px 10px;
+  background: url(img/menu_bg.jpg) 50%;
   background-size: cover;
-  background-position: 50% 50%;
 }
 
 .menuPickupTitle {
@@ -323,10 +375,35 @@ li {
   background-color: #fff;
   position: relative;
   box-shadow: 5px 5px 5px #505050;
+  transition: 0.35s
 }
 
-.menuPickup_img {
-  
+.pickAni_1:hover {
+  transform: translateY(-15px);
+}
+
+.pickAni_2:hover {
+  transform: scale(1.05);
+}
+
+.pickAni_3:hover {
+  transform: rotate(360deg);
+}
+
+.pickAni_4:hover {
+  transform: skewX(-3deg);
+}
+
+.pickAni_5:hover {
+  transform: rotateY(30deg);
+}
+
+.pickAni_6 {
+  transition-timing-function: cubic-bezier(0.5, -2.5, 0.5, 3.5);
+}
+
+.pickAni_6:hover {
+  transform: translateX(10px);
 }
 
 .menuPickupProduct {
@@ -369,25 +446,23 @@ li {
 }
 
 .menuPickupLink {
-  margin: 25px auto 20px auto;
-  width: 7.5em;
-  height: 3em;
+  margin: 20px auto;
+  width: 170px;
+  padding: 15px 20px;
+  border: 1px solid #9d265d;
   background-color: #A70707;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  text-align: center;
   font-size: 2.2rem;
   font-weight: bold;
-}
-
-.menuPickupLink :hover {
-  background-color: #D57328;
-  border-radius: 50%;
-}
-
-.menuPickupLinkA {
+  text-decoration: none;
   color: #fff;
-  transition: 0.4s;
+  transition: 0.3s;
+}
+
+.menuPickupLink:hover {
+  border-radius: 50%;
+  background: #d57328;
 }
 
 @media (max-width:420px) {
@@ -402,7 +477,7 @@ li {
   padding: 0;
 }
 
-.footer .menu ul {
+.menuList {
   display: table;
   table-layout: fixed;
   width: 86.5rem;
@@ -417,19 +492,6 @@ li {
   display: table-cell;
   text-align: center;
   border-left: dashed 0.1rem #aaa;
-}
-
-
-.footer .menu li a {
-  margin: 0;
-  padding: 0;
-  color: #5E1939;
-  text-decoration: none;
-}
-
-.footer .menu li span {
-  display: block;
-  font-size: 1.4rem;
 }
 
 @media (max-width:420px) {
@@ -476,6 +538,12 @@ li {
               -1px -1px #fff,
               -1px 1px #fff,
                1px -1px #fff;
+  transition: 0.2s;
+}
+
+.faAn :hover {
+  color: #c37b07;
+  transform: translateY(5px);
 }
 
 .footerConAd {
@@ -490,7 +558,6 @@ li {
   margin: 0 0 15px 0;
   font-size: 1.6rem;
   color: #F8F8F8;
-  
 }
 
 .footerConLinkA {

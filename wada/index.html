@@ -15,43 +15,57 @@
         <h1><a href="#"><img class="logo_img" src="img/logo2.svg" alt="ロゴ画像"></a></h1>
       </div>
       <nav class="menu">
-        <ul>
-          <li><a href="#"><b>TOP</b><span>-トップ-</span></a></li>
-          <li><a href="#"><b>SPECIAL</b><span>-こだわり-</span></a></li>
-          <li><a href="#"><b>MENU</b><span>-メニュー-</span></a></li>
-          <li><a href="#"><b>STORE</b><span>-店舗情報-</span></a></li>
-          <li><a href="#"><b>RECRUIT</b><span>-採用情報-</span></a></li>
-          <li><a href="#"><b>CONTACT</b><span>-お問合せ-</span></a></li>
+        <ul class="navList">
+          <li class="menuItem">
+            <a class="menuLink menuLinkActive" href="#">TOP<span class="menuItemSub">-トップ-</span>
+            </a>
+          </li>
+          <li class="menuItem">
+            <a class="menuLink" href="#">SPECIAL<span class="menuItemSub">-こだわり-</span>
+            </a>
+          </li>
+          <li class="menuItem">
+            <a class="menuLink" href="#">MENU<span class="menuItemSub">-メニュー-</span></a>
+          </li>
+          <li class="menuItem">
+            <a class="menuLink" href="#">STORE<span class="menuItemSub">-店舗情報-</span></a>
+          </li>
+          <li class="menuItem">
+            <a class="menuLink" href="#">RECRUIT<span class="menuItemSub">-採用情報-</span></a>
+          </li>
+          <li class="menuItem">
+            <a class="menuLink" href="#">CONTACT<span class="menuItemSub">-お問合せ-</span></a>
+          </li>
         </ul>
       </nav>
     </header>
     <section>
       <article class="news">
-        <h2>NEWS<span>-ニュース-</span></h2>
+        <h2 class="heading newsHeading">NEWS<br><span class="heading_sub">-ニュース-</span></h2>
           <div class="news_topic">
             <ul class="newsList">
               <li class="newsItem">
-                <a href="#">
+                <a class="newsItemLink" href="#">
                   <span class="newsItem_cat">お知らせ</span>
-                  <time class="newsItem_time">2017年12月04日</time><br>西麻布2号店がオープンしました。
+                  <time class="newsItem_time" datetime="2017-12-04">2017年12月04日</time><br>西麻布2号店がオープンしました。
                 </a>
               </li>
               <li class="newsItem">
-                <a href="#">
+                <a class="newsItemLink" href="#">
                   <span class="newsItem_cat newsItem_cat_menu">メニュー</span>
-                  <time class="newsItem_time">2017年12月01日</time><br>月替わりメニューを公開しました。
+                  <time class="newsItem_time" datetime="2017-12-01">2017年12月01日</time><br>月替わりメニューを公開しました。
                 </a>
               </li>
               <li class="newsItem">
-                <a href="#">
+                <a class="newsItemLink" href="#">
                   <span class="newsItem_cat">お知らせ</span>
-                  <time class="newsItem_time">2017年11月24日</time><br>西麻布店がオープンしました。
+                  <time class="newsItem_time" datetime="2017-11-24">2017年11月24日</time><br>西麻布店がオープンしました。
                 </a>
               </li>
               <li class="newsItem">
-                <a href="#">
+                <a class="newsItemLink" href="#">
                   <span class="newsItem_cat">お知らせ</span>
-                  <time class="newsItem_time">2017年11月16日</time><br>HPがリニューアル！
+                  <time class="newsItem_time" datetime="2017-11-16">2017年11月16日</time><br>HPがリニューアル！
                 </a>
               </li>
             </ul>
@@ -60,7 +74,7 @@
     </section>
     <section>
       <article class="special">
-        <h2>SPECIAL<span>-こだわり-</span></h2>
+        <h2 class="spHeading">SPECIAL<span class="spHeading_sb">-こだわり-</span></h2>
         <div class="specialContainer">
           <div class="specialItem">
             <img class="specilItem_img" src="img/special_01.png" alt="森の画像">
@@ -81,14 +95,14 @@
             <p class="specialContentText">Lorem ipsum dolor sitamet,<br>consectetur adipisicing elit, sed do<br>eisumod tempor incididunt ut labore<br>et dolore magna aliqua.</p>
           </div>
         </div>
-        <p class="specialLink"><a href="#">詳しく見る</a></p>
+        <a class="specialLink" href="#">詳しく見る</a>
       </article>
     </section>
     <section>
       <article class="menu_pickup">
         <h2 class="menuPickupTitle">MENU PICKUP<span class="menuPickupTitle_sub">-お薦めメニュー-</span></h2>
         <div class="menuPickupContainer">
-          <div class="menuPickupItem">
+          <div class="menuPickupItem pickAni_1">
             <img class="menuPickup_img" src="img/menu/01.jpg" alt="コーヒー画像">
             <p class="menuPickupProduct">Lorem ipsum</p>
             <div class="menuPickupBox">
@@ -96,7 +110,7 @@
               <p class="menuPickupPrice">￥600（tax in）</p>
             </div>
           </div>
-          <div class="menuPickupItem">
+          <div class="menuPickupItem pickAni_2">
             <img class="menuPickup_img" src="img/menu/02.jpg" alt="ドーナツ画像">
             <p class="menuPickupProduct">Lorem ipsum</p>
             <div class="menuPickupBox">
@@ -104,7 +118,7 @@
               <p class="menuPickupPrice">￥600（tax in）</p>
             </div>
           </div>
-          <div class="menuPickupItem">
+          <div class="menuPickupItem pickAni_3">
             <img class="menuPickup_img" src="img/menu/03.JPG" alt="ピザ画像">
             <p class="menuPickupProduct">Lorem ipsum</p>
             <div class="menuPickupBox">
@@ -112,7 +126,7 @@
               <p class="menuPickupPrice">￥600（tax in）</p>
             </div>
           </div>
-          <div class="menuPickupItem">
+          <div class="menuPickupItem pickAni_4">
             <img class="menuPickup_img" src="img/menu/04.JPG" alt="フルーツ画像">
             <p class="menuPickupProduct">Lorem ipsum</p>
             <div class="menuPickupBox">
@@ -120,7 +134,7 @@
               <p class="menuPickupPrice">￥600（tax in）</p>
             </div>
           </div>
-          <div class="menuPickupItem">
+          <div class="menuPickupItem pickAni_5">
             <img class="menuPickup_img" src="img/menu/05.jpg" alt="サラダ画像">
             <p class="menuPickupProduct">Lorem ipsum</p>
             <div class="menuPickupBox">
@@ -128,7 +142,7 @@
               <p class="menuPickupPrice">￥600（tax in）</p>
             </div>
           </div>
-          <div class="menuPickupItem">
+          <div class="menuPickupItem pickAni_6">
             <img class="menuPickup_img" src="img/menu/06.jpg" alt="セット画像">
             <p class="menuPickupProduct">Lorem ipsum</p>
             <div class="menuPickupBox">
@@ -137,29 +151,43 @@
             </div>
           </div>
         </div>
-        <p class="menuPickupLink"><a class="menuPickupLinkA" href="#">MENU一覧</a></p>
+        <a class="menuPickupLink" href="#">MENU一覧</a>
       </article>
     </section>
     <footer class="footer">
-      <div class="menu">
-        <ul>
-          <li><a href="#"><b>TOP</b><span>-トップ-</span></a></li>
-          <li><a href="#"><b>SPECIAL</b><span>-こだわり-</span></a></li>
-          <li><a href="#"><b>MENU</b><span>-メニュー-</span></a></li>
-          <li><a href="#"><b>STORE</b><span>-店舗情報-</span></a></li>
-          <li><a href="#"><b>RECRUIT</b><span>-採用情報-</span></a></li>
-          <li><a href="#"><b>CONTACT</b><span>-お問合せ-</span></a></li>
+      <nav class="menu">
+        <ul class="menuList">
+          <li class="menuItem">
+            <a class="menuLink menuLinkActive" href="#">TOP<span class="menuItemSub">-トップ-</span>
+            </a>
+          </li>
+          <li class="menuItem">
+            <a class="menuLink" href="#">SPECIAL<span class="menuItemSub">-こだわり-</span>
+            </a>
+          </li>
+          <li class="menuItem">
+            <a class="menuLink" href="#">MENU<span class="menuItemSub">-メニュー-</span></a>
+          </li>
+          <li class="menuItem">
+            <a class="menuLink" href="#">STORE<span class="menuItemSub">-店舗情報-</span></a>
+          </li>
+          <li class="menuItem">
+            <a class="menuLink" href="#">RECRUIT<span class="menuItemSub">-採用情報-</span></a>
+          </li>
+          <li class="menuItem">
+            <a class="menuLink" href="#">CONTACT<span class="menuItemSub">-お問合せ-</span></a>
+          </li>
         </ul>
-      </div>
+      </nav>
       <div class="footer_content">
         <div class="footerContainer">
           <div class="footerItemLo">
             <p><a href="#"><img class="logo_img footer_logo" src="img/logo2.svg" alt="ロゴ画像" ></a></p>
           </div>
           <div class="footerItemFa">
-            <a href="#"><i class="fa fa-twitter-square faAi"></i></a>
-            <a href="#"><i class="fa fa-facebook-square faAi"></i></a>
-            <a href="#"><i class="fa fa-instagram faAi"></i></a>
+            <a class="faAn" href="#"><i class="fa fa-twitter-square"></i></a>
+            <a class="faAn" href="#"><i class="fa fa-facebook-square"></i></a>
+            <a class="faAn" href="#"><i class="fa fa-instagram"></i></a>
           </div>
         </div>
         <p class="footerConAd"><span class="footerOblique">〒106-0031</span> 東京都港区西麻布<span class="footerOblique">1-14-5</span> 永都ビル<span class="footerOblique">B1</span></p>
