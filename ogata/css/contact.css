@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* --------------------------------
+ * contact
+ * -------------------------------- */
+
+.contact_heading {
+  margin: 30px auto;
+  width: 10em;
+}
+
+.contact {
+  background: url(../images/menu_bg.jpg);
+}
+
+.contact_filter {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 60px 0;
+}
+
+.contactTbl {
+  max-width: 600px;
+  margin: 30px auto;
+  font-size: 1.8rem;
+  border-collapse: collapse;
+}
+
+.contactTbl th {
+  width: 12em;
+  padding: 5px;
+  border: 1px solid #aaa;
+  background: #efefef;
+}
+
+.contactTbl td {
+  padding: 5px 10px;
+  border: 1px solid #aaa;
+  background: #fff;
+}
+
+.contactTbl label {
+  padding: 0 5px;
+}
+
+.contactTbl input[type="text"],
+.contactTbl input[type="email"],
+.contactTbl select {
+  font-size: 1.6rem;
+  padding: 3px;
+  outline: none;
+  border: 1px solid #aaa;
+  transition: 0.2s;
+}
+
+.contactTbl input[type="email"] {
+  width: 18em;
+}
+
+.contactTbl textarea {
+  width: 25em;
+  height: 10em;
+  padding: 3px;
+  font-size: 1.6rem;
+  outline: none;
+  border: 1px solid #aaa;
+  transition: 0.2s;
+}
+
+.contactTbl input[type="text"]:focus,
+.contactTbl input[type="email"]:focus,
+.contactTbl textarea:focus {
+  box-shadow: 0 0 4px #fa4f4f inset;
+}
+
+.contactTbl_required {
+  padding-left: 5px;
+  color: red;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.contactBox {
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contactBox_btn {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #9d265d;
+}
+
+.contactBox_txt {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 600px;
+  font-size: 2rem;
+  line-height: 1.4;
+  background: rgba(255, 255, 255, 0.5);
+  
+}
+
+.contact_txt {
+  display: block;
+  font-size: 1.6rem;
+  width: 35em;
+  margin: 20px auto;
+  padding: 30px;
+  background: rgba(255,255,255, 0.8);
+  border-radius: 10px;
+}
+
+/* @media */
+@media(max-width: 600px) {
+  .contactTbl {
+    max-width: 600px;
+    font-size: 1.4rem;
+  }
+  .contactTbl input[type="text"],
+  .contactTbl input[type="email"] {
+    font-size: 1.4rem;
+    width: 14em;
+  }
+  .contactTbl select {
+    font-size: 1.4rem;
+  }
+  .contactTbl textarea {
+    width: 18em;
+  }
+}

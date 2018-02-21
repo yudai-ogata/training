@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <meta name="Keywords" content="スリランカ, カフェ, コーヒー">
+  <meta name="description" content="株式会社ZiQの研修プログラム用サンプルサイトです。">
+  <title>Sri Lan Cafe | CONTACT</title>
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header_box">
+      <a href="index.html"><img class="header_logo" src="images/logo2.svg" alt="logo"></a>
+      <img class="header_img" src="images/header.jpg" alt="header">
+      <h1 class="header_ttl hidden">Sri Ran Cafe</h1>
+    </div>
+    
+    <nav class="nav">
+      <ul class="navList">
+        <li class="navItem">
+          <a class="navItem_link" href="#">HOME<br>
+            <span class="navItem_sub">-ホーム-</span>
+          </a>
+        </li>
+        <li class="navItem">
+          <a class="navItem_link" href="#">SPECIAL<br>
+            <span class="navItem_sub">-こだわり-</span>
+          </a>
+        </li>
+        <li class="navItem">
+          <a class="navItem_link" href="#">MENU<br>
+            <span class="navItem_sub">-メニュー-</span>
+          </a>
+        </li>
+        <li class="navItem">
+          <a class="navItem_link" href="#">STORE<br>
+            <span class="navItem_sub">-店舗情報-</span>
+          </a>
+        </li>
+        <li class="navItem">
+          <a class="navItem_link" href="#">RECRUIT<br>
+            <span class="navItem_sub">-採用情報-</span>
+          </a>
+        </li>
+        <li class="navItem">
+          <a class="navItem_link navItem_link-active" href="contact.html#contact">CONTACT<br>
+            <span class="navItem_sub">-お問合せ-</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+  </header>
+
+  <main class="contact">
+    <div class="contact_filter">
+
+     <h1 class="heading contact_heading" id="contact">CONTACT<br><span class="heading_sub">-お問合せ-</span></h1>
+
+      <article>
+        <form action="confirm.php#contact" method="post">
+          <table class="contactTbl">
+            <tr>
+              <th>お名前<span class="contactTbl_required">※必須</span></th>
+              <td>
+                <input type="text" name="name" placeholder="例：田中 太郎" required>
+              </td>
+            </tr>
+            <tr>
+              <th>e-mail<span class="contactTbl_required">※必須</span></th>
+              <td><input type="email" name="email" placeholder="例：contact@srilancafe.com" required></td>
+            </tr>
+            <tr>
+              <th>性別</th>
+              <td>
+                <input id="male" type="radio" name="jender" value="男性"><label for="male">男性</label>
+                <input id="female" type="radio" name="jender" value="女性"><label for="female">女性</label>
+                <input id="unknown" type="radio" name="jender" value="その他" checked="checked"><label for="unknown">その他</label>
+              </td>
+            </tr>
+            <tr>
+              <th>年齢</th>
+              <td>
+                <select name="age">
+                  <option value="未選択">選択してください</option>
+                  <option value="10代">10代</option>
+                  <option value="20代">20代</option>
+                  <option value="30代">30代</option>
+                  <option value="40代">40代</option>
+                  <option value="50代">50代</option>
+                  <option value="60代">60代</option>
+                  <option value="70代">70代</option>
+                  <option value="80代">80代</option>
+                  <option value="90代">90代</option>
+                  <option value="100代">100代</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th>どこで知りましたか？<br>
+                （複数回答可）
+              </th>
+              <td>
+                <input type="checkbox" id="cm" name="where[]" value="CM"><label for="cm">CM</label><br>
+                <input type="checkbox" id="friends" name="where[]" value="友達"><label for="friends">友達</label><br>
+                <input type="checkbox" id="sns" name="where[]" value="SNS"><label for="sns">SNS</label>
+              </td>
+            </tr>
+            <tr>
+              <th>ご用件<span class="contactTbl_required">※必須</span></th>
+              <td><textarea name="content" required></textarea></td>
+            </tr>
+          </table>
+          <div class="contactBox">
+            <input class="btn contactBox_btn" type="submit" value="確認する">
+            <input class="btn contactBox_btn" type="reset" value="リセット">
+          </div>
+        </form>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <nav class="nav">
+      <ul class="navList">
+        <li class="navItem">
+          <a class="navItem_link" href="#">HOME<br>
+            <span class="navItem_sub">-ホーム-</span>
+          </a>
+        </li>
+        <li class="navItem">
+          <a class="navItem_link" href="#">SPECIAL<br>
+            <span class="navItem_sub">-こだわり-</span>
+          </a>
+        </li>
+        <li class="navItem">
+          <a class="navItem_link" href="#">MENU<br>
+            <span class="navItem_sub">-メニュー-</span>
+          </a>
+        </li>
+        <li class="navItem">
+          <a class="navItem_link" href="#">STORE<br>
+            <span class="navItem_sub">-店舗情報-</span>
+          </a>
+        </li>
+        <li class="navItem">
+          <a class="navItem_link" href="#">RECRUIT<br>
+            <span class="navItem_sub">-採用情報-</span>
+          </a>
+        </li>
+        <li class="navItem">
+          <a class="navItem_link navItem_link-active" href="contact.html#contact">CONTACT<br>
+            <span class="navItem_sub">-お問合せ-</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="flexBox">
+      <a href="index.html"><img class="footer_logo" src="images/logo2.svg" alt="logo"></a>
+      <div class="sns">
+        <a href="#"><i class="fa fa-twitter-square"></i><span class="hidden">Twitter</span></a>
+         <a href="#"><i class="fa fa-facebook-square"></i><span class="hidden">Facebook</span></a>
+        <a href="#"><i class="fa fa-instagram"></i><span class="hidden">Instagram</span></a>
+      </div>
+    </div>
+    <address class="footer_company">〒106-0031 東京都港区西麻布1-14-5 永都ビルB1</address>
+    <a class="btn footer_btn" href="#">会社情報</a>
+    <p class="footer_copy">&copy; Sri Lan Cafe all rights reserved.</p>
+  </footer>
+</body>
+</html>
